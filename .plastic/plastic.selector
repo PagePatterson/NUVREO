@@ -1,4 +1,0 @@
-repository "NUVREO@Scake@cloud"
-  path "/"
-    br "/main"
-    co "/main"
