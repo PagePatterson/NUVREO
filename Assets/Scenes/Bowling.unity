@@ -4296,6 +4296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallAngleThreshold: 30
+  disappearTime: 3
 --- !u!1 &323959890
 GameObject:
   m_ObjectHideFlags: 0
@@ -4963,6 +4964,9 @@ GameObject:
   - component: {fileID: 367491596}
   - component: {fileID: 367491595}
   - component: {fileID: 367491594}
+  - component: {fileID: 367491600}
+  - component: {fileID: 367491599}
+  - component: {fileID: 367491598}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -5057,6 +5061,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &367491598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367491593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e617737c781e534eb8e2c4ace64b133, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _snapPoint: {fileID: 0}
+  _materialBlock: {fileID: 0}
+  _reticleMode: 1
+  _hideReticle: 0
+--- !u!114 &367491599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367491593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2140d2b457bea84881488302059889b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider: {fileID: 367491594}
+--- !u!114 &367491600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367491593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4462db6b836045640a882a2a4e4022f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 367491598}
+  _allowTeleport: 1
+  _equalDistanceToBlockerOverride: 0
+  _tieBreakerScore: 0
+  _surface: {fileID: 367491599}
+  _targetPoint: {fileID: 0}
+  _faceTargetDirection: 0
+  _eyeLevel: 0
 --- !u!1 &371571905
 GameObject:
   m_ObjectHideFlags: 0
@@ -12539,6 +12595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallAngleThreshold: 30
+  disappearTime: 3
 --- !u!1 &859150994
 GameObject:
   m_ObjectHideFlags: 0
@@ -16058,6 +16115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallAngleThreshold: 30
+  disappearTime: 3
 --- !u!1 &1160403649
 GameObject:
   m_ObjectHideFlags: 0
@@ -16556,6 +16614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallAngleThreshold: 30
+  disappearTime: 3
 --- !u!1 &1176465988
 GameObject:
   m_ObjectHideFlags: 0
@@ -18332,6 +18391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallAngleThreshold: 30
+  disappearTime: 3
 --- !u!1 &1332831550
 GameObject:
   m_ObjectHideFlags: 0
@@ -20760,6 +20820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallAngleThreshold: 30
+  disappearTime: 3
 --- !u!1 &1481543184
 GameObject:
   m_ObjectHideFlags: 0
@@ -21668,6 +21729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallAngleThreshold: 30
+  disappearTime: 3
 --- !u!1 &1530175556 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 240947319632331348, guid: 992d87c712c6e654e9f47887f82ea93a,
@@ -21714,6 +21776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallAngleThreshold: 30
+  disappearTime: 3
 --- !u!1 &1533354547
 GameObject:
   m_ObjectHideFlags: 0
@@ -25183,6 +25246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallAngleThreshold: 30
+  disappearTime: 3
 --- !u!1 &1748057077
 GameObject:
   m_ObjectHideFlags: 0
@@ -27906,6 +27970,102 @@ Transform:
   - {fileID: 1623790789}
   m_Father: {fileID: 1782462137}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1962913030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5650418666171286351, guid: f95addb02706df74fa8bf8edd3c04b51,
+    type: 3}
+  m_PrefabInstance: {fileID: 2107756513772059158}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1962913032 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 4527324099975099992, guid: f95addb02706df74fa8bf8edd3c04b51,
+    type: 3}
+  m_PrefabInstance: {fileID: 2107756513772059158}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1962913037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962913030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb7085c111fcb44493d57d4e336d3fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _positionConstraints:
+    ConstraintsAreRelative: 0
+    XAxis:
+      ConstrainAxis: 0
+      AxisRange:
+        Min: 0
+        Max: 0
+    YAxis:
+      ConstrainAxis: 0
+      AxisRange:
+        Min: 0
+        Max: 0
+    ZAxis:
+      ConstrainAxis: 0
+      AxisRange:
+        Min: 0
+        Max: 0
+  _rotationConstraints:
+    XAxis:
+      ConstrainAxis: 0
+      AxisRange:
+        Min: 0
+        Max: 0
+    YAxis:
+      ConstrainAxis: 0
+      AxisRange:
+        Min: 0
+        Max: 0
+    ZAxis:
+      ConstrainAxis: 0
+      AxisRange:
+        Min: 0
+        Max: 0
+  _scaleConstraints:
+    ConstraintsAreRelative: 1
+    XAxis:
+      ConstrainAxis: 1
+      AxisRange:
+        Min: 1
+        Max: 1
+    YAxis:
+      ConstrainAxis: 1
+      AxisRange:
+        Min: 1
+        Max: 1
+    ZAxis:
+      ConstrainAxis: 1
+      AxisRange:
+        Min: 1
+        Max: 1
+--- !u!114 &1962913038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962913030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transferOnSecondSelection: 0
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
+  _oneGrabTransformer: {fileID: 1962913037}
+  _twoGrabTransformer: {fileID: 0}
+  _targetTransform: {fileID: 0}
+  _maxGrabPoints: -1
+  _rigidbody: {fileID: 1962913032}
+  _kinematicWhileSelected: 1
+  _throwWhenUnselected: 1
 --- !u!1 &1964302450
 GameObject:
   m_ObjectHideFlags: 0
@@ -29707,6 +29867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallAngleThreshold: 30
+  disappearTime: 3
 --- !u!1 &2058596318
 GameObject:
   m_ObjectHideFlags: 0
@@ -30791,7 +30952,15 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5650418666171286351, guid: f95addb02706df74fa8bf8edd3c04b51,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1962913038}
+    - targetCorrespondingSourceObject: {fileID: 5650418666171286351, guid: f95addb02706df74fa8bf8edd3c04b51,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1962913037}
   m_SourcePrefab: {fileID: 100100000, guid: f95addb02706df74fa8bf8edd3c04b51, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
