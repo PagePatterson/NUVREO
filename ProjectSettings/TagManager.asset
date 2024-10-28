@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Racket
+  - Shuttle
+  - Left Court 1
+  - Right Court 1
+  - Right Court 2
+  - Left Court 2
+  - Big Red Court
   layers:
   - Default
   - TransparentFX
