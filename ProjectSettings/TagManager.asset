@@ -11,6 +11,8 @@ TagManager:
   - Right Court 2
   - Left Court 2
   - Big Red Court
+  - Racket 2
+  - Racket 1
   layers:
   - Default
   - TransparentFX

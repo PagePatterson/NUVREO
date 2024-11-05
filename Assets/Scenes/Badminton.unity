@@ -844,7 +844,12 @@ PrefabInstance:
     - target: {fileID: 9196402838283604478, guid: fa19db7c7a3a77942b91403c20c706c3,
         type: 3}
       propertyPath: m_Name
-      value: racket (1)
+      value: Racket 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9196402838283604478, guid: fa19db7c7a3a77942b91403c20c706c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Racket 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1965,7 +1970,12 @@ PrefabInstance:
     - target: {fileID: 9196402838283604478, guid: fa19db7c7a3a77942b91403c20c706c3,
         type: 3}
       propertyPath: m_Name
-      value: racket
+      value: ' Racket 2'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9196402838283604478, guid: fa19db7c7a3a77942b91403c20c706c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Racket 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
