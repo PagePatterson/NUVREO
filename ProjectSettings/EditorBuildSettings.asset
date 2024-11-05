@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Shooting.unity
+    guid: 84d4c651f592f478d9e51bf5db8a6ffa
+  - enabled: 0
     path: Assets/Scenes/Bowling.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: faa0a04e8a949924991bc0c534a3fe95,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c473ae1385665d244a3746d64b442f12,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 93b123844947a384981c65f1b70cf947,
+      type: 2}
