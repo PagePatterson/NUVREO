@@ -48,7 +48,7 @@ public class Ralley : MonoBehaviour
         {
             Debug.Log("Collided with birdie: " + collision.gameObject.tag);
             // add more logic if needed
-            player2Score++;
+            Score.AddPointToPlayer2();
             /*
             1. Whether it is in or out.
             2. Which player gets the point
@@ -60,7 +60,7 @@ public class Ralley : MonoBehaviour
         {
             Debug.Log("Collided with birdie: " + collision.gameObject.tag);
             // add more logic if needed
-            player1Score++;
+            Score.AddPointToPlayer1();            
             /*
             1. Whether it is in or out.
             2. Which player gets the point
@@ -72,7 +72,7 @@ public class Ralley : MonoBehaviour
         {
             Debug.Log("Collided with birdie: " + collision.gameObject.tag);
             // add more logic if needed
-            player1Score++;
+            Score.AddPointToPlayer1();
             /*
             1. Whether it is in or out.
             2. Which player gets the point
@@ -109,13 +109,11 @@ public class Ralley : MonoBehaviour
             //if lasthit == player2, player1 gets point 
             if (lastHit == "player1")
             {
-                player2Score++;
-                Debug.Log(player2Score);
+                Score.AddPointToPlayer2();
             }
             else if (lastHit == "player2")
             {
-                player1Score++;
-                Debug.Log(player1Score);
+                Score.AddPointToPlayer1();
             }
 
 
