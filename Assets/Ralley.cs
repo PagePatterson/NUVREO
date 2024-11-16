@@ -35,6 +35,7 @@ public class Ralley : MonoBehaviour
             // add more logic if needed
             // if player 2 is serving && their score is even, player1score++
             Score.AddPointToPlayer1();
+            ralleyOver = true;
  
             
             /*
@@ -49,6 +50,7 @@ public class Ralley : MonoBehaviour
             Debug.Log("Collided with birdie: " + collision.gameObject.tag);
             // add more logic if needed
             Score.AddPointToPlayer2();
+            ralleyOver = true;
             /*
             1. Whether it is in or out.
             2. Which player gets the point
@@ -60,7 +62,8 @@ public class Ralley : MonoBehaviour
         {
             Debug.Log("Collided with birdie: " + collision.gameObject.tag);
             // add more logic if needed
-            Score.AddPointToPlayer1();            
+            Score.AddPointToPlayer1();
+            ralleyOver = true;
             /*
             1. Whether it is in or out.
             2. Which player gets the point
@@ -73,6 +76,7 @@ public class Ralley : MonoBehaviour
             Debug.Log("Collided with birdie: " + collision.gameObject.tag);
             // add more logic if needed
             Score.AddPointToPlayer1();
+            ralleyOver = true;
             /*
             1. Whether it is in or out.
             2. Which player gets the point
@@ -110,10 +114,12 @@ public class Ralley : MonoBehaviour
             if (lastHit == "player1")
             {
                 Score.AddPointToPlayer2();
+                ralleyOver = true;
             }
             else if (lastHit == "player2")
             {
                 Score.AddPointToPlayer1();
+                ralleyOver = true;
             }
 
 
