@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 56872452}
   - component: {fileID: 56872451}
   m_Layer: 0
-  m_Name: ScoreManager
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -443,6 +443,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 450968378}
+    - targetCorrespondingSourceObject: {fileID: 2627569091522246239, guid: 793877ef325a92643bdf4dafa1435458,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 450968383}
   m_SourcePrefab: {fileID: 100100000, guid: 793877ef325a92643bdf4dafa1435458, type: 3}
 --- !u!1 &450968372 stripped
 GameObject:
@@ -462,6 +466,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60f35671cb452c14e9215f59564d2a72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ralleyWinner: 
+  ralleyOver: 0
+  serving: {fileID: 0}
 --- !u!54 &450968378
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -489,6 +496,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &450968383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450968372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af6b5bd28da609949b5eab225ff6fba5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rallyWinner: 
+  rallyOver: 0
+  serving: {fileID: 0}
 --- !u!1 &461972645
 GameObject:
   m_ObjectHideFlags: 0
