@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
-    public Ralley ralley;
+    public Rally rally;
     public static int player1Score;
     public static int player2Score;
     // code for duece (win by two if 20-20)
