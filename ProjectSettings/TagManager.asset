@@ -13,6 +13,7 @@ TagManager:
   - Big Red Court
   - Racket 2
   - Racket 1
+  - Net
   layers:
   - Default
   - TransparentFX

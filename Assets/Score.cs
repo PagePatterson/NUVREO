@@ -14,34 +14,40 @@ public class Score : MonoBehaviour
     public static void AddPointToPlayer1()
     {
         player1Score++;
+        Debug.Log(player1Score);
+        Debug.Log(player2Score);
     }
 
     public static void AddPointToPlayer2()
     {
         player2Score++;
+        Debug.Log(player1Score);
+        Debug.Log(player2Score);
     }
     // Start is called before the first frame update
     void Start()
     {
-        UpdateScoreUI();
-        ClearResultMessage();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-         if (scoreText != null) {
-            scoreText.text = "Score: " + score.ToString();
-        }
+        gameOverChecker();
     }
 
-    public void gameOverChecker() {
-        if (abs(player1Score - player2Score) >= 2 and (player1Score >= 21 or player2Score >= 21)) {
-            if (player1Score > player2Score) {
-                DisplayResultMessage("Player 1 Wins!")
+    public void gameOverChecker()
+    {
+        //if either player is at 21 or more and the differnce between them is atleast 2 or more 
+        if ((Mathf.Abs(player1Score - player2Score) >= 2) && ((player1Score >= 21) || (player2Score >= 21)))
+        {
+            if (player1Score > player2Score)
+            {
+                Debug.Log("Player 1 Wins!");
             }
-            else {
-                DisplayResulMessage("Player 2 Wins!");
+            else
+            {
+                Debug.Log("Player 2 Wins!");
             }
         }
     }

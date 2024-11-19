@@ -9105,6 +9105,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: net (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 43c1f913200c4df4981a930f8ae84235,
+        type: 3}
+      propertyPath: m_TagString
+      value: Net
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
