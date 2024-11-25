@@ -10,29 +10,30 @@ public class SnapTurn : MonoBehaviour
     public float cooldownTime = 0.2f;
 
     private float lastTurnTime = 0f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
-        float horizontalInput = Input.GetAxis("Oculus_CrossPlatform_SecondaryThumbstickHorizontal");
-        if (Time.time - lastTurnTime > cooldownTime) {
-            if (horizontalInput > deadzone) {
+        // Get the horizontal input from the RIGHT joystick (SecondaryThumbstick)
+        Vector2 joystickInput = OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick); // Right joystick
+
+        if (Time.time - lastTurnTime > cooldownTime)
+        {
+            // Check if the input is above the deadzone to trigger snap turn
+            if (joystickInput.x > deadzone) // Turn right
+            {
                 Snap(1);
                 lastTurnTime = Time.time;
             }
-            else if (horizontalInput < -deadzone) {
+            else if (joystickInput.x < -deadzone) // Turn left
+            {
                 Snap(-1);
                 lastTurnTime = Time.time;
             }
         }
     }
 
-    void Snap(int direction) {
-        rightTransform.Rotate(0, direction * turnAngle, 0);
+    void Snap(int direction)
+    {
+        rightTransform.Rotate(0, direction * turnAngle, 0); // Rotate around the Y-axis
     }
 }
