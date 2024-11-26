@@ -14,6 +14,7 @@ TagManager:
   - Racket 2
   - Racket 1
   - Net
+  - Ball
   layers:
   - Default
   - TransparentFX
