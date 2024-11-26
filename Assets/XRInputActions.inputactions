@@ -1,0 +1,34 @@
+{
+    "name": "XRInputActions",
+    "maps": [
+        {
+            "name": "PlayerControls",
+            "id": "cf5d2041-20fc-4bb3-a199-a470d1211574",
+            "actions": [
+                {
+                    "name": "SnapTurnAction",
+                    "type": "Value",
+                    "id": "c7c6360b-61ea-4d87-8351-5b244dbf9f5f",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5dde2bc2-f643-43da-b5d3-0b763897e1ea",
+                    "path": "<XRController>{RightHand}/{Primary2DAxis}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SnapTurnAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
